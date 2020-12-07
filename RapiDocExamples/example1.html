@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapiDocIssues</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .change-url {
+            position: absolute;
+            top: 9px;
+            left: 24px;
+            border: 1px solid;
+            background: #1f0303;
+            color: azure;
+            padding: 5px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <rapi-doc 
+      show-info = "true"
+      spec-url = "/RapiDocExamples/specs/petstore_extended.yaml"
+      show-header="false" 
+      render-style="focused"
+      allow-try="false" 
+      regular-font="Open Sans" mono-font="Roboto Mono"
+      class="thedoc"
+    > 
+        <button class="change-url">Change Spec Url</button>
+    </rapi-doc>
+    <script type="text/javascript" src="./rapidoc-min.js"></script>
+    <script>
+        const doc = document.querySelector('.thedoc');
+        document.querySelector('.change-url').addEventListener('click', () => {
+            doc.setAttribute('spec-url', '/RapiDocExamples/specs/demo-swagger.json')
+        })
+    </script>
+</body>
+</html>
