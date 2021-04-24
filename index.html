@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <pre>
-        “Everything that informs us of something useful that we didn't already know is a potential signal.
-         If it matters and deserves a response, its potential is actualized.”
-    </pre>
-</body>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        line-height: 1.5;
+        word-wrap: break-word;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Hi, I am <b>Dharmendra</b>
+      <a href="https://www.linkedin.com/in/dharmendra-patel-a459474a"
+        ><img
+          src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin"
+          alt="LinkedIn"
+      /></a>
+      <a href="mailto:dharmendra.patel26@gmail.com">
+        <img
+          src="https://img.shields.io/badge/Email--_.svg?logo=gmail&style=social"
+        />
+      </a>
+      <img
+        src="https://visitor-badge.laobi.icu/badge?page_id=Dharmendra205111014.Dharmendra205111014"
+      />
+    </h1>
+    <p>
+      A Software Developer who Love to explore the world of WEB, and solve
+      challanging problems.
+    </p>
+    <img
+      align="right"
+      src="https://github-readme-stats.vercel.app/api?username=Dharmendra205111014&line_height=24&show_icons=true&hide=stars"
+    />
+    <div class="tech">
+      <h3>Technologoies I work on,</h3>
+    </div>
+  </body>
 </html>
+
+<script>
+  const catageries = {
+    "Languages And Framworks": {
+      "Javacript(ES6)":
+        "https://img.shields.io/badge/Javascript-666?logo=javascript&style=for-the-badge",
+      HTML:
+        "https://img.shields.io/badge/HTML5-d83a7d?style=for-the-badge&logo=html5&color=black",
+      CSS: "https://img.shields.io/badge/CSS-ggg?logo=css3&style=for-the-badge",
+      "Node js":
+        "https://img.shields.io/badge/Node%20JS-444400?logo=node.js&style=for-the-badge",
+      Vue:
+        "https://img.shields.io/badge/Vue%20JS-gray?logo=vue.js&style=for-the-badge",
+      "Web Component":
+        "https://img.shields.io/badge/Web%20Components-purple?logo=webcomponents.org&style=for-the-badge",
+      Java:
+        "https://img.shields.io/badge/java-black?logo=java&style=for-the-badge",
+      Springboot:
+        "https://img.shields.io/badge/Spring%20boot-darkgreen?logo=spring&style=for-the-badge",
+      php:
+        "https://img.shields.io/badge/PHP-darkblue?logo=php&style=for-the-badge",
+      Typescript:
+        "https://img.shields.io/badge/Typescript-lightblue?logo=typescript&style=for-the-badge",
+      SCSS:
+        "https://img.shields.io/badge/SCSS-darkred?logo=sass&style=for-the-badge",
+      Buefy:
+        "https://img.shields.io/badge/Buefy-whitesmoke?logo=buefy&style=for-the-badge",
+      Bulma:
+        "https://img.shields.io/badge/Bulma-gold?logo=bulma&style=for-the-badge",
+    },
+    Databases: {
+      Mysql:
+        "https://img.shields.io/badge/MySql-f29221?logo=mysql&style=for-the-badge",
+      Postgray:
+        "https://img.shields.io/badge/PostgreSQL-808000?logo=postgresql&style=for-the-badge",
+      Redis:
+        "https://img.shields.io/badge/Redis-FFDAB9?logo=redis&style=for-the-badge",
+    },
+    "Server And Operations": {
+      nginx:
+        "https://img.shields.io/badge/Nginx-4682B4?logo=nginx&style=for-the-badge",
+      Apache:
+        "https://img.shields.io/badge/Apache-red?logo=apache&style=for-the-badge",
+      Docker:
+        "https://img.shields.io/badge/Docker-darkblue?logo=docker&style=for-the-badge",
+      Kubernetes:
+        "https://img.shields.io/badge/Kubernetes-lightblue?logo=kubernetes&style=for-the-badge",
+    },
+    Editors: {
+      Vscode:
+        "https://img.shields.io/badge/VSCode-blue?logo=visual-studio-code&style=for-the-badge",
+      Intellij:
+        "https://img.shields.io/badge/Intellij%20Idea-000?logo=intellij-idea&style=for-the-badge",
+      Eclipse:
+        "https://img.shields.io/badge/Eclipse-4169E1?logo=eclipse-ide&style=for-the-badge",
+      Sublime:
+        "https://img.shields.io/badge/Sublime%20Text-whitesmoke?logo=sublime-text&style=for-the-badge",
+    },
+    "Operating System": {
+      Linux:
+        "https://img.shields.io/badge/Linux-4B0082?logo=linux&style=for-the-badge",
+      Mac:
+        "https://img.shields.io/badge/Mac%20OS-000?logo=macos&style=for-the-badge",
+      windows:
+        "https://img.shields.io/badge/Windows-blue?logo=windows&style=for-the-badge",
+    },
+    "Business Domains": {
+      Travel: "https://img.shields.io/badge/Travel-f29221?&style=for-the-badge",
+      Banking:
+        "https://img.shields.io/badge/Banking-purple?&style=for-the-badge",
+    },
+  };
+
+  const container = document.querySelector(".tech");
+
+  Object.keys(catageries).forEach((key) => {
+    container.innerHTML += `<h4>${key}</h4>
+        <div>${Object.keys(catageries[key])
+          .map((k) => {
+            return `${
+              catageries[key][k]
+                ? `<img src="${catageries[key][k]}" height="30">`
+                : k
+            } `;
+          })
+          .join("")}</div>
+      `;
+  });
+</script>
